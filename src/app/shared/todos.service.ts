@@ -27,10 +27,7 @@ export class TodosService {
     }
 
     removeTodo(id: number) {
-        // let todos = this.todos.slice()
-        const updateTodos = this.todos.filter(t => t.id !== id)
-        this.todos = updateTodos
-        console.log(this.todos)
+        const todos = this.todos.filter(t => t.id !== id)
     }
 
     addTodo(todo: Todo) {
