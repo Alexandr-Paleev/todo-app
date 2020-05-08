@@ -27,7 +27,7 @@ export class TodosService {
     }
 
     removeTodo(id: number) {
-        const todos = this.todos.filter(t => t.id !== id)
+        this.todos = this.todos.filter(t => t.id !== id)
     }
 
     addTodo(todo: Todo) {
